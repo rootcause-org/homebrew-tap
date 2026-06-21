@@ -5,20 +5,20 @@
 class Rc < Formula
   desc "Thin scriptable client over rootcause's /api/v1 — consume your project's own run data"
   homepage "https://github.com/rootcause-org/rootcause-cli"
-  version "0.2.2"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rootcause-org/rootcause-cli/releases/download/v0.2.2/rc_0.2.2_darwin_amd64.tar.gz"
-      sha256 "df1ffdc491e92e031fabf7fbe3e063aad402e2d6c04f3caf77ede50b0741fe12"
+      url "https://github.com/rootcause-org/rootcause-cli/releases/download/v0.3.0/rc_0.3.0_darwin_amd64.tar.gz"
+      sha256 "c312628100c106784ee459f4b9208dd2bfe31d81b1bba753d1dcc08dbe0ff2ed"
 
       define_method(:install) do
         bin.install "rc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rootcause-org/rootcause-cli/releases/download/v0.2.2/rc_0.2.2_darwin_arm64.tar.gz"
-      sha256 "1cbda16ab87601cff06e315329fe8ab75e3ecd8dcf9f0f5a9bef7c53ed90fc56"
+      url "https://github.com/rootcause-org/rootcause-cli/releases/download/v0.3.0/rc_0.3.0_darwin_arm64.tar.gz"
+      sha256 "d851be599ad3037a3961b49219e9433fb07d80eae664a86b22c0ef7343881aa4"
 
       define_method(:install) do
         bin.install "rc"
@@ -28,15 +28,15 @@ class Rc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rootcause-org/rootcause-cli/releases/download/v0.2.2/rc_0.2.2_linux_amd64.tar.gz"
-      sha256 "66178c858df6f86ea038a9e7124d33ccfc891f0a49b13aea2bc84d68d03f58b1"
+      url "https://github.com/rootcause-org/rootcause-cli/releases/download/v0.3.0/rc_0.3.0_linux_amd64.tar.gz"
+      sha256 "ca8eba951bd478cfdecd171cf0b7c910f3fa8a5f0bb5c266eaab7fde49abf5ae"
       define_method(:install) do
         bin.install "rc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rootcause-org/rootcause-cli/releases/download/v0.2.2/rc_0.2.2_linux_arm64.tar.gz"
-      sha256 "007bf21ce5863cccdef573b3dde37f1c74de527e67c7f78b8d0ab45432437a07"
+      url "https://github.com/rootcause-org/rootcause-cli/releases/download/v0.3.0/rc_0.3.0_linux_arm64.tar.gz"
+      sha256 "95c5667ffe20f6b27137fd38bdf2cb010c748f675dd0664013aca6a1b19b6dfd"
       define_method(:install) do
         bin.install "rc"
       end
